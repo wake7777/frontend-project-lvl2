@@ -1,0 +1,11 @@
+name: eslint-test
+on: push
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install packages
+        run: make install
+      - name: run linter
+        run: make lint
