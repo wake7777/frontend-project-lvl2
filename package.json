@@ -8,7 +8,7 @@
   "description": "[![Actions Status](https://github.com/wake7777/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/wake7777/frontend-project-lvl2/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
