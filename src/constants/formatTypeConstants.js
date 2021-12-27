@@ -3,4 +3,5 @@ export default {
   same: 'same',
   add: 'add',
   update: 'update',
+  recursion: 'recursion',
 };

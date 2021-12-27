@@ -11,4 +11,7 @@
 
 
 ## Gendiff example
-[![asciicast](https://asciinema.org/a/shSS85FTbVq9TCjGeUpXKh67z)](https://asciinema.org/connect/5ec8cf4b-e2a4-400e-b462-6301d93e029a)
+[![asciicast](https://asciinema.org/a/H8C5FJCudC8Sdp2WKg15yVGCC)](https://asciinema.org/a/H8C5FJCudC8Sdp2WKg15yVGCC)
+
+## Gendiff yaml and json comparison
+[![asciicast](https://asciinema.org/a/0vWXF4M9pjyH1iphfOuYm38H3)](https://asciinema.org/a/0vWXF4M9pjyH1iphfOuYm38H3)
