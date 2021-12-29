@@ -16,6 +16,17 @@ const getString = (data, treeDepth) => {
   ].join('\n');
 };
 
+const getStringPlain = (data) => {
+  if (typeof data === 'object' && data !== null) {
+    return '[complex value]';
+  } if (typeof data === 'string') {
+    return `'${data}'`;
+  } if (data === null) {
+    return null;
+  }
+  return String(data);
+};
+
 const formatter = (format, data1) => {
   if (format === 'stylish') {
     const iter = (data, depth) => data.map((item) => {
@@ -36,6 +47,26 @@ const formatter = (format, data1) => {
       }
     });
     return `{\n${iter(data1, 1).join('')}}`;
+  }
+  if (format === 'plain') {
+    const iter = (data, parents) => data
+      .filter((item) => item.type !== formatTypeConstants.same)
+      .map((item) => {
+        const parInclude = parents ? `${parents}.${item.key}` : item.key;
+        switch (item.type) {
+          case formatTypeConstants.add:
+            return `Property '${parInclude}' was added with value: ${getStringPlain(item.value)}`;
+          case formatTypeConstants.remove:
+            return `Property '${parInclude}' was removed`;
+          case formatTypeConstants.update:
+            return `Property '${parInclude}' was updated. From ${getStringPlain(item.value1)} to ${getStringPlain(item.value2)}`;
+          case formatTypeConstants.recursion:
+            return `${iter(item.children, parInclude)}`;
+          default:
+            throw new Error(`Этого типа не существует: ${item.type}`);
+        }
+      }).join('\n');
+    return iter(data1);
   }
   return 'yeeeh';
 };

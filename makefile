@@ -7,7 +7,7 @@ publish:
 lint:
 	npx eslint .
 
-linterFix:
+lintFix:
 	npx eslint --fix .
 
 test:

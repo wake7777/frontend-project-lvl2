@@ -40,3 +40,11 @@ test('second test long YML', () => {
   const result = genDiff(firstFile, secondFile, 'stylish');
   expect(result).toEqual(getResult);
 });
+
+test('second test long --format plane', () => {
+  const firstFile = getFixturePath('file1L.json');
+  const secondFile = getFixturePath('file2L.json');
+  const getResult = readFile('resultPlain.txt');
+  const result = genDiff(firstFile, secondFile, 'plain');
+  expect(result).toEqual(getResult);
+});
