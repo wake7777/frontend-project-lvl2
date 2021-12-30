@@ -1,14 +1,16 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
 
+import formatOutputConstants from '../constants/formatOutputConstants.js'
+
 const formatter = (format, dataTree) => {
-  if (format === 'stylish') {
+  if (format === formatOutputConstants.stylish) {
     return stylish(dataTree);
   }
-  if (format === 'plain') {
+  if (format === formatOutputConstants.plain) {
     return plain(dataTree);
   }
-  if (format === 'json') {
+  if (format === formatOutputConstants.json) {
     return JSON.stringify(dataTree);
   }
   return 1;
