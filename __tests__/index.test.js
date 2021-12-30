@@ -48,3 +48,11 @@ test('second test long --format plane', () => {
   const result = genDiff(firstFile, secondFile, 'plain');
   expect(result).toEqual(getResult);
 });
+
+test('second test long --format json', () => {
+  const firstFile = getFixturePath('file1L.json');
+  const secondFile = getFixturePath('file2L.json');
+  const getResult = readFile('resultJson.txt');
+  const result = genDiff(firstFile, secondFile, 'json');
+  expect(result).toEqual(getResult);
+});

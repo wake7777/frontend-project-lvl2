@@ -18,3 +18,6 @@
 
 ## Gendiff --plain comparison
 [(https://asciinema.org/a/MsdgMaPS4QcgRtHs3WOcfZ19M)](https://asciinema.org/a/MsdgMaPS4QcgRtHs3WOcfZ19M)
+
+## Gendiff --json comparison
+[(https://asciinema.org/a/yv80F3dsWvJdgzPe86hzqt23l)](https://asciinema.org/a/yv80F3dsWvJdgzPe86hzqt23l)
