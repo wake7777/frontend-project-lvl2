@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import parse from './parse.js';
-import formatter from './formaters/index.js';
-import buildTree from './buildTree.js';
+import parse from './src/parse.js';
+import formatter from './src/formaters/index.js';
+import buildTree from './src/buildTree.js';
 
 const readFile = (filepath) => fs.readFileSync(path.resolve(process.cwd(), filepath.trim()), 'utf-8');
 const extractFormat = (filepath) => path.extname(filepath).slice(1);
