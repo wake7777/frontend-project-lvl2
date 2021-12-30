@@ -1,5 +1,5 @@
 export default {
-    stylish: 'stylish',
-    plain: 'plain',
-    json: 'json',
+  stylish: 'stylish',
+  plain: 'plain',
+  json: 'json',
 };

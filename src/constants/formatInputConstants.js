@@ -1,5 +1,5 @@
 export default {
-    json: 'json',
-    yml: 'yml',
-    yaml: 'yaml',
+  json: 'json',
+  yml: 'yml',
+  yaml: 'yaml',
 };

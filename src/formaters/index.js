@@ -1,7 +1,7 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
 
-import formatOutputConstants from '../constants/formatOutputConstants.js'
+import formatOutputConstants from '../constants/formatOutputConstants.js';
 
 const formatter = (format, dataTree) => {
   if (format === formatOutputConstants.stylish) {
