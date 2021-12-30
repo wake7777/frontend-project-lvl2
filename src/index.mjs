@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import parse from './parse.js';
-import formatter from './formatter.js';
+import formatter from './formaters/index.js';
 import buildTree from './buildTree.js';
 
 const readFile = (filename) => fs.readFileSync(path.resolve(process.cwd(), filename.trim()), 'utf-8');

@@ -15,3 +15,6 @@
 
 ## Gendiff yaml and json comparison
 [(https://asciinema.org/a/0vWXF4M9pjyH1iphfOuYm38H3)](https://asciinema.org/a/0vWXF4M9pjyH1iphfOuYm38H3)
+
+## Gendiff --plain comparison
+[(https://asciinema.org/a/MsdgMaPS4QcgRtHs3WOcfZ19M)](https://asciinema.org/a/MsdgMaPS4QcgRtHs3WOcfZ19M)
